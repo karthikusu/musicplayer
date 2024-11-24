@@ -1,0 +1,81 @@
+body{
+    background-color: lightgreen;
+
+    transition: background-color .5s;
+}
+/* using the flex with the column direction to align items in vertical direction*/
+.player {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+.track-art {
+    margin: 25px;
+    height: 250px;
+    width: 250px;
+    background-image:url("images/noir-kSZFRjQz4Fs-unsplash.jpg") ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15%;
+}
+.now-playing {
+    font-size: 1rem;
+}
+.track-artist {
+    font-size: 1.5rem;
+}
+/* using the flex withe the row direction to align items in a horizontal direction */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.playpause-track,.prev-track,.next-track {
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity .2s;
+    
+}
+/* change the opacity when the mouse hovered */
+.playpause-track:hover,.prev-track:hover,.next-track:hover {
+    opacity: 1.0;
+    color: red;
+}
+/*Defines the slider width so that it scales properly */
+.slider_container {
+    width: 75%;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Modify the apperance of the slider */
+.seek_slider,.volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* change the opacity when mouse Hovered */
+.seek_slider:hover,.volume_slider:hover {
+opacity: 2.0;
+}
+.seek_slider {
+    width: 60%;
+}
+.volume_slider {
+    width: 30%;
+    background-color: black;
+}

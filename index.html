@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="player">
+        <!--Define the section for displaying the details-->
+        <div class="details">
+            <div class="now-playing">Playing x of y</div>
+            <div class="track-art"></div>
+            <div class="track-name">Track-name</div>
+            <div class="track-artist">Track-artist</div>
+        </div>
+        <!--The section for displaying the buttons-->
+        <div class="buttons">
+        <div class="prev-track">
+        <i class="fas fa-step-backward fa-2x"></i>
+        </div>
+        <div class="playpause-track">
+        <i class="fas fa-play-circle fa-5x"></i>
+        </div>
+        <div class="next-track">
+        <i class="fas fa-step-forward fa-2x"></i>
+        </div>
+        </div>
+        <!--Define the section for displaying the seek slider-->
+        <div class="slider_container">
+            <div class="current-time">00:00</div>
+            <input type="range" min="0" max="100" value="0" class="seek_slider">
+            <div class="total-duration">00:00</div>
+        </div>
+        <!--Define the volumeUp slider-->
+        <div class="slider_container">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="0" class="volume_slider">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
